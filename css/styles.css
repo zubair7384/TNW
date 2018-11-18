@@ -1,0 +1,311 @@
+body{
+    margin: 0;
+    background-color: #fff;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    z-index: 3;
+  }
+#header-wrapper{
+    display: flex;
+    background-color: #fff;
+    justify-content: flex-start;
+    flex-basis: 100%;
+    justify-content: space-between;
+    box-shadow: 0 0 1.9rem 0  rgba(0, 0, 0, 0.116);
+}
+.logo{
+    margin: 0;
+    padding-left: .5rem;
+    padding-right: 1.2rem;
+    cursor: pointer;
+    background: rgb(229,0,105); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(229,0,105,1) 0%, rgba(255,0,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(229,0,105,1) 0%,rgba(255,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(229,0,105,1) 0%,rgba(255,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e50069', endColorstr='#ff0000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.logo:hover{
+    background-image: url("../img/home-1.gif");
+}
+.logo >img{
+    padding-top: 1rem;
+    padding-left: .8rem;
+}
+.nav-wrapper > ul {
+    display: flex;
+    list-style: none;
+    letter-spacing: .08rem;
+    line-height: 3;
+    margin: 0;
+    margin-right:.6rem;  
+}
+.nav-wrapper > ul >li{
+    padding:0 20px 0 0;
+}
+.nav-wrapper > ul >li >a{
+    font-family: 'Raleway', sans-serif;
+    font-size: .8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #455858a2;
+}
+.nav-wrapper > ul > li >a:hover {
+    color: black;  
+    transition: .4s;
+}
+ /* Latest News CSS */
+
+#latest-news{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 87%;
+}
+.latest-news .latest-news-heading >h2{
+    display: flex;
+    margin: 6.5rem 1rem 1rem 1rem ;
+    flex-basis: 1.7rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff4949;
+    cursor: pointer;
+}
+.latest-news .latest-news-heading >h2:hover{
+    color:black;
+}
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.cards-wrapper .card-1 {
+    flex: 0 0 270px; 
+    margin: .6rem;
+} 
+.cards-wrapper .card-1 >img {
+    width: 270px;
+    height: 140px;
+}
+
+  .cards-wrapper .card-1 .texts { 
+    padding: 0 0 5px;
+  }
+.cards-wrapper .card-1 .texts >h3{
+    font-family: 'Raleway', sans-serif; 
+    color: black;
+    font-size: 1rem;
+    padding-top: .6rem;
+    margin: 0;
+}
+.cards-wrapper .card-1 .texts h3:hover{
+    cursor: pointer;
+    text-decoration: underline rgba(245, 28, 28, 0.342) ;
+    color: rgb(245, 28, 28);
+}
+.cards-wrapper .card-1 .texts >p{
+    font-family: 'Raleway', sans-serif;
+    color: #1d232373;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.4rem;
+    margin-top: .3rem;
+}
+span:hover{
+    color:#101111b9;
+}
+
+/* Latest Deals CSS */
+
+#latest-deals{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 87%;
+}
+.deals-heading{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 98%;
+}
+.latest-deals .deals-heading >h2{
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff4949;
+    cursor: pointer;
+}
+.latest-deals .deals-heading >p{
+    display: flex;
+    display: inline-flex;
+    margin:0;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ff4949;
+    cursor: pointer;
+}
+.latest-deals .deals-heading >h2:hover{
+    color:black;
+}
+.latest-deals .deals-heading >p:hover{
+    color:black;
+}
+.cards-wrapper .card-2 {
+    width: 270px;
+    height: 274px;
+    margin: .7rem;
+    position: relative;
+} 
+.cards-wrapper .card-2 .discount-img >img{
+    width: 80px;
+}
+.cards-wrapper .card-2 >img {
+    width: 270px;
+    height: 201.15px;
+}
+.card-2 .discount-img{
+    position: absolute;
+    right: 0;
+    display: block;
+    top: 0;
+    pointer-events: none;
+    height: 80px;
+    z-index: 2;
+}
+.card-2 .discount-img >h4{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin:0;
+    transform: rotate(45deg);
+    font-size: .75rem;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 1rem 0 1em 1rem;
+}
+.cards-wrapper .card-2 .texts { 
+    padding: 0 0 5px;
+  }
+.cards-wrapper .card-2 .texts >h3{
+    font-family: 'Raleway', sans-serif; 
+    color: black;
+    font-size: 1rem;
+    padding-top: .6rem;
+    margin: 0;
+}
+.cards-wrapper .card-2 .texts h3:hover{
+    cursor: pointer;
+    text-decoration: underline rgba(245, 28, 28, 0.342) ;
+    color: rgb(245, 28, 28);
+}
+
+.cards-wrapper .card-2 .texts >p{
+    font-family:Arial, Helvetica, sans-serif;
+    color: #1c1f1fd7;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: .3rem;
+}
+.cards-wrapper .card-2 .texts >p >span{
+    text-decoration: line-through #363d3d8a;
+    color: #262b2b98;
+    font-size: 13px;
+    margin-right: .6rem;
+}
+
+@media screen and (max-width: 1024px){
+    .deals-heading >p{
+         width:14%;
+    }
+    .cards-wrapper{
+        justify-content: flex-start;
+        flex-basis: 271px;
+    }
+    .cards-wrapper .card-1{
+        margin: .8rem;
+    }
+}
+@media screen and (max-width: 843px){
+    .header{
+        position: static;
+    }
+    #header-wrapper{
+        flex-direction: column;
+        box-shadow: none;
+    }
+    .logo{
+        
+        display: flex;
+        justify-content: center;
+        padding: 18px;
+    }
+    .logo >img{
+        padding:10px 10px;
+    }
+   
+    .nav-wrapper > ul{
+        flex-direction: column;
+        margin:0 auto;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+       
+    }
+    .nav-wrapper > ul > li{
+        border-bottom: 1.5px solid rgba(196, 185, 185, 0.651);
+        padding: 12px;
+       
+    }
+    .nav-wrapper > ul > li >a{
+        font-size: .8rem;
+    }
+    .latest-news .latest-news-heading >h2{
+        margin: 6.5rem 1rem 1rem 2rem ;
+    }
+    .cards-wrapper{
+        justify-content: space-around;
+    }
+    .deals-heading{
+        width: 90%;
+    }
+    .latest-deals >h2{
+        margin:3rem 1.5rem 1.4rem 3rem;
+    }
+    .latest-deals .deals-heading >p{
+        display: none;
+    }
+   
+}
+@media screen and (max-width: 500px){
+    .latest-news-heading{
+        display: flex;
+        justify-content: center;
+    }
+    .latest-news .latest-news-heading >h2{
+        text-align:center;
+        flex-basis: 60%; 
+        margin: 5rem 0 1rem 0;
+    }
+    .deals-heading{
+        justify-content: center;
+    }
+    .latest-deals >h2{
+        text-align:center;
+        align-items: center;
+    }
+    .latest-deals .deals-heading >p{
+        display: none;
+    }
+    .cards-wrapper .card-2{
+        margin-top: 2rem;
+    }
+}
