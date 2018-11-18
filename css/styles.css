@@ -23,11 +23,11 @@ body{
     padding-left: .5rem;
     padding-right: 1.2rem;
     cursor: pointer;
-    background: rgb(229,0,105); /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(229,0,105,1) 0%, rgba(255,0,0,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(229,0,105,1) 0%,rgba(255,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(229,0,105,1) 0%,rgba(255,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e50069', endColorstr='#ff0000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: rgb(229,0,105);
+    background: -moz-linear-gradient(-45deg, rgba(229,0,105,1) 0%, rgba(255,0,0,1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(229,0,105,1) 0%,rgba(255,0,0,1) 100%);
+    background: linear-gradient(135deg, rgba(229,0,105,1) 0%,rgba(255,0,0,1) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e50069', endColorstr='#ff0000',GradientType=1 );
 }
 .logo:hover{
     background-image: url("../img/home-1.gif");
@@ -58,17 +58,15 @@ body{
     color: black;  
     transition: .4s;
 }
- /* Latest News CSS */
-
 #latest-news{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 87%;
+    width: 85%;
 }
 .latest-news .latest-news-heading >h2{
     display: flex;
-    margin: 6.5rem 1rem 1rem 1rem ;
+    margin: 6.5rem 0 1rem 0;
     flex-basis: 1.7rem;
     font-family: 'Raleway', sans-serif;
     font-size: 28px;
@@ -82,17 +80,16 @@ body{
 .cards-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content:space-between;
 }
 .cards-wrapper .card-1 {
-    flex: 0 0 270px; 
-    margin: .6rem;
+    flex: 0 0 270px;
+    margin: .6rem 0;
 } 
 .cards-wrapper .card-1 >img {
     width: 270px;
     height: 140px;
 }
-
   .cards-wrapper .card-1 .texts { 
     padding: 0 0 5px;
   }
@@ -119,20 +116,16 @@ body{
 span:hover{
     color:#101111b9;
 }
-
-/* Latest Deals CSS */
-
 #latest-deals{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 87%;
+    width: 85%;
 }
 .deals-heading{
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    width: 98%;
+    width: 100%;
 }
 .latest-deals .deals-heading >h2{
     display: flex;
@@ -163,7 +156,7 @@ span:hover{
 .cards-wrapper .card-2 {
     width: 270px;
     height: 274px;
-    margin: .7rem;
+    margin: .8rem 0;
     position: relative;
 } 
 .cards-wrapper .card-2 .discount-img >img{
@@ -190,7 +183,7 @@ span:hover{
     transform: rotate(45deg);
     font-size: .75rem;
     font-family:Arial, Helvetica, sans-serif;
-    padding: 1rem 0 1em 1rem;
+    padding: 1.4rem 0 1em 1rem;
 }
 .cards-wrapper .card-2 .texts { 
     padding: 0 0 5px;
@@ -207,7 +200,6 @@ span:hover{
     text-decoration: underline rgba(245, 28, 28, 0.342) ;
     color: rgb(245, 28, 28);
 }
-
 .cards-wrapper .card-2 .texts >p{
     font-family:Arial, Helvetica, sans-serif;
     color: #1c1f1fd7;
@@ -221,22 +213,33 @@ span:hover{
     font-size: 13px;
     margin-right: .6rem;
 }
-
 @media screen and (max-width: 1024px){
-    .deals-heading >p{
-         width:14%;
-    }
     .cards-wrapper{
         justify-content: flex-start;
-        flex-basis: 271px;
+    }
+    .latest-news .latest-news-heading >h2{
+        margin: 6.5rem 0 1rem 10px;
     }
     .cards-wrapper .card-1{
-        margin: .8rem;
+        margin: .6rem;
+    }
+    .latest-deals{
+        justify-content: flex-start;
+    }
+    .latest-deals .deals-heading >h2 {
+        margin: 36px 0 1rem 10px;
+    }
+    .latest-deals .deals-heading >p{
+        margin-right:18px;
+    }
+    .cards-wrapper .card-2{
+        margin: .6rem;
     }
 }
 @media screen and (max-width: 843px){
     .header{
         position: static;
+        box-shadow: 0 0 1.8rem 0  rgba(0, 0, 0, 0.116);
     }
     #header-wrapper{
         flex-direction: column;
@@ -251,28 +254,28 @@ span:hover{
     .logo >img{
         padding:10px 10px;
     }
-   
     .nav-wrapper > ul{
         flex-direction: column;
         margin:0 auto;
         text-align: center;
         padding: 0;
         margin: 0;
-       
     }
     .nav-wrapper > ul > li{
-        border-bottom: 1.5px solid rgba(196, 185, 185, 0.651);
+        border-bottom: 1.5px solid rgba(165, 152, 152, 0.486);
         padding: 12px;
-       
     }
     .nav-wrapper > ul > li >a{
         font-size: .8rem;
     }
-    .latest-news .latest-news-heading >h2{
-        margin: 6.5rem 1rem 1rem 2rem ;
+    #latest-news{
+        width: 76%;
     }
     .cards-wrapper{
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+    #latest-deals{
+        width: 76%;
     }
     .deals-heading{
         width: 90%;
@@ -283,24 +286,54 @@ span:hover{
     .latest-deals .deals-heading >p{
         display: none;
     }
-   
+}
+@media screen and (max-width: 736px){
+    #latest-news{
+        width:82%
+    }
+    #latest-deals{
+        width:82%
+    }
+    .cards-wrapper{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 667px){
+    .latest-news .latest-news-heading >h2{
+        display: flex;
+        justify-content: center;
+        flex-basis: 72%; 
+        margin: 5rem 0 1rem 0;
+    }
+    .deals-heading{
+        justify-content: center;
+    }.deals-heading{
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 500px){
+    #latest-news{
+        width: 81%;
+    }
+    .cards-wrapper{
+        justify-content: center;
+    }
     .latest-news-heading{
         display: flex;
         justify-content: center;
     }
     .latest-news .latest-news-heading >h2{
-        text-align:center;
-        flex-basis: 60%; 
+        display: flex;
+        justify-content: center;
+        flex-basis: 72%; 
         margin: 5rem 0 1rem 0;
     }
     .deals-heading{
         justify-content: center;
     }
     .latest-deals >h2{
-        text-align:center;
-        align-items: center;
+       display: flex;
+       justify-content: center;
     }
     .latest-deals .deals-heading >p{
         display: none;
